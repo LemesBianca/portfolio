@@ -1,12 +1,12 @@
 export default function Skills() {
   return (
-    <section className="py-24 px-8">
-      <h2 className="text-4xl font-bold mb-12">
+    <section className="py-5 px-8">
+      <h2 className="text-4xl font-bold mb-2 justify-center flex flex-wrap justify-center">
         Skills
       </h2>
 
       <div className="grid md:grid-cols-3 gap-6">
-        <div className="border border-zinc-800 rounded-2xl p-6">
+        <div className="bg-white text-black rounded-3xl p-8">
           <h3 className="text-2xl font-semibold mt-2">
             Front-end
           </h3>
@@ -16,7 +16,7 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="border border-zinc-800 rounded-2xl p-6">
+        <div className="bg-white text-black rounded-3xl p-8">
           <h3 className="text-2xl font-semibold mt-2">
             Back-end
           </h3>
@@ -26,7 +26,7 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="border border-zinc-800 rounded-2xl p-6">
+        <div className="bg-white text-black rounded-3xl p-8">
           <h3 className="text-2xl font-semibold mt-2">
             Ferramentas
           </h3>

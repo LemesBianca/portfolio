@@ -1,17 +1,21 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-8">
-      <h1 className="text-6xl font-bold">
+    <section className="py-12">
+      <p className="text-zinc-400 mb-8">
         Bianca Lemes
+      </p>
+
+      <h1 className="text-7xl md:text-9xl font-bold leading-none">
+        Full-Stack
       </h1>
 
-      <h2 className="text-3xl mt-4 text-gray-400">
-        Desenvolvedora Full Stack Júnior
-      </h2>
+      <h1 className="text-7xl md:text-9xl font-bold leading-none text-right">
+        Developer
+      </h1>
 
-      <p className="max-w-xl mt-6 text-gray-300">
-        Experiência prática com Next.js, React,
-        TypeScript, Prisma e PostgreSQL.
+      <p className="max-w-xl mt-8 text-zinc-400">
+        Desenvolvedora em formação com experiência prática
+        utilizando Next.js, React, TypeScript, Prisma e PostgreSQL.
       </p>
     </section>
   );

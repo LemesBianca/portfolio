@@ -1,11 +1,52 @@
 export default function Projects() {
   return (
-    <section className="py-24 px-8">
-      <h2 className="text-4xl font-bold mb-12">
+    <section className="py-5 px-8">
+      <h2 className="text-4xl font-bold mb-2 justify-center flex flex-wrap justify-center ">
         Projetos
       </h2>
+      <div className="grid md:grid-cols-3 gap-6">
 
-      <div className="grid md:grid-cols-2 gap-6">
+
+
+        <div className="border border-zinc-800 rounded-2xl p-6">
+          <span className="text-sm text-blue-400">
+            Projeto Pessoal
+          </span>
+
+          <h3 className="text-2xl font-semibold mt-2">
+            Portfolio Website
+          </h3>
+
+          <p className="text-zinc-400 mt-3">
+            Portfolio pessoal desenvolvido para apresentar
+            experiência profissional, projetos e habilidades
+            técnicas através de uma interface moderna e responsiva.
+          </p>
+
+          <div className="flex flex-wrap gap-2 mt-4">
+            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
+              Next.js
+            </span>
+
+            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
+              React
+            </span>
+
+            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
+              TypeScript
+            </span>
+
+            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
+              Tailwind CSS
+            </span>
+
+            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
+              Vercel
+            </span>
+          </div>
+        </div>
+
+
         <div className="border border-zinc-800 rounded-2xl p-6">
           <span className="text-sm text-blue-400">
             Projeto Profissional
@@ -44,6 +85,7 @@ export default function Projects() {
           </div>
         </div>
 
+
         <div className="border border-zinc-800 rounded-2xl p-6">
           <span className="text-sm text-blue-400">
             Em desenvolvimento
@@ -66,7 +108,7 @@ export default function Projects() {
             <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
               C#
             </span>
-            
+
             <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
               Unity API
             </span>

@@ -1,15 +1,20 @@
 export default function About() {
   return (
-    <section className="py-24 px-8">
-      <h2 className="text-4xl font-bold mb-6">
-        Sobre Mim
-      </h2>
-
-      <p className="max-w-2xl text-gray-300">
-        Desenvolvedora em formação com experiência
-        prática no desenvolvimento de sistemas web
-        utilizando Next.js, React, TypeScript e Prisma.
+    <section className="py-5">
+  <div className="grid md:grid-cols-2 gap-12">
+    <div>
+      <p className="text-zinc-500">
+        ... / About me ...
       </p>
-    </section>
+    </div>
+
+    <div>
+      <p className="text-1xl">
+        Olá! Eu sou a Bianca, sou uma desenvolvedora full-stack no inicio de carreira.
+        Estou mudando de área.
+      </p>
+    </div>
+  </div>
+</section>
   );
 }

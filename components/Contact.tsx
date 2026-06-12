@@ -1,37 +1,48 @@
 export default function Contact() {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-8">
-      <h1 className="text-4xl font-bold">
-        Contato
-      </h1>
+    <section className="py-1 px-8">
+      <div className="flex flex-wrap justify-center gap-20">
 
-      <h2 className="text-3xl mt-4 text-gray-400">
-        GitHub
-      </h2>
-      <p className="max-w-xl mt-6 text-gray-300">
-        https://github.com/LemesBianca
-      </p>
+        <a 
+          href="https://github.com/LemesBianca"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 border border-zinc-800 rounded-full text-zinc-300
+                      hover:bg-white hover:text-black transition-all duration-300"
+        >
+          
+          GitHub
+        </a>
 
-      <h2 className="text-3xl mt-4 text-gray-400">
-        LinkedIn
-      </h2>
-      <p className="max-w-xl mt-6 text-gray-300">
-        https://www.linkedin.com/in/bianca-lemess/
-      </p>
-      
-      <h2 className="text-3xl mt-4 text-gray-400">
-        E-mail
-      </h2>
-      <p className="max-w-xl mt-6 text-gray-300">
-        biancalemes.e@gmail.com
-      </p>
+        <a
+          href="https://www.linkedin.com/in/bianca-lemess/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 border border-zinc-800 rounded-full text-zinc-300
+                      hover:bg-white hover:text-black transition-all duration-300"
+        >
+          LinkedIn
+        </a>
 
-      <h2 className="text-3xl mt-4 text-gray-400">
-        Telefone
-      </h2>
-      <p className="max-w-xl mt-6 text-gray-300">
-        (51) 98145-7787
-      </p>
+        <a
+          href="mailto:biancalemes.e@gmail.com"
+          className="px-6 py-3 border border-zinc-800 rounded-full text-zinc-300
+                      hover:bg-white hover:text-black transition-all duration-300"
+        >
+          E-mail
+        </a>
+
+        <a
+          href="https://wa.me/5551981457787"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 border border-zinc-800 rounded-full text-zinc-300
+                      hover:bg-white hover:text-black transition-all duration-300"
+        >
+          WhatsApp
+        </a>
+
+      </div>
     </section>
   );
 }
