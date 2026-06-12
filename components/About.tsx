@@ -1,20 +1,28 @@
 export default function About() {
   return (
-    <section className="py-5">
-  <div className="grid md:grid-cols-2 gap-12">
-    <div>
-      <p className="text-zinc-500">
-        ... / About me ...
-      </p>
-    </div>
+    <section className="py-3">
+      <div className="grid md:grid-cols-2 gap-12">
+        <div>
+          <p className="text-zinc-500">
+            ... / About me ...
+          </p>
+        </div>
 
-    <div>
-      <p className="text-1xl">
-        Olá! Eu sou a Bianca, sou uma desenvolvedora full-stack no inicio de carreira.
-        Estou mudando de área.
-      </p>
-    </div>
-  </div>
-</section>
+
+        <div className="space-y-3">
+          <p className="text-zinc-400">
+            Hi! I'm Bianca, an early-career Full Stack Developer
+            transitioning into the technology industry.
+          </p>
+
+          <p className="text-zinc-400">
+            I enjoy building web applications, solving problems,
+            and learning new technologies while creating software
+            that delivers real-world impact.
+          </p>
+        </div>
+
+      </div>
+    </section>
   );
 }

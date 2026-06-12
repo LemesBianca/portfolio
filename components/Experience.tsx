@@ -1,57 +1,56 @@
 export default function Experience() {
-  return (
-    <section className="py-16 px-8">
-      <h2 className="text-5xl font-bold mb-12 text-right">
-        Experiência Profissional
-      </h2>
+    return (
+        <section className="py-16 px-8">
+            <h2 className="text-5xl font-bold mb-12 text-right">
+                Professional Experience
+            </h2>
 
-      <div className="space-y-8">
+            <div className="space-y-8">
 
-        <div className="grid md:grid-cols-3 gap-4 border-b border-zinc-800 pb-6">
-          <div className="text-zinc-500">
-            2026 - Atual
-          </div>
+                <div className="grid md:grid-cols-3 gap-4 border-b border-zinc-800 pb-6">
+                    <div className="text-zinc-500">
+                        2026 - Present
+                    </div>
 
-          <div>
-            <h3 className="font-semibold">
-              Full Stack Developer Resident
-            </h3>
+                    <div>
+                        <h3 className="font-semibold">
+                            Full Stack Developer Resident
+                        </h3>
 
-            <p className="text-zinc-400">
-              BRISA / TIC 55
-            </p>
-          </div>
+                        <p className="text-zinc-400">
+                            BRISA / TIC 55
+                        </p>
+                    </div>
 
-          <div className="text-zinc-400">
-            Desenvolvimento de funcionalidades,
-            integração com banco de dados,
-            correção de bugs e manutenção
-            do Sistema GAPA.
-          </div>
-        </div>
+                    <div className="text-zinc-400">
+                        Implemented end-to-end features, from user interface
+                        development to database integration, while contributing
+                        to the maintenance and evolution of the GAPA system.S
+                    </div>
+                </div>
 
-        <div className="grid md:grid-cols-3 gap-4 border-b border-zinc-800 pb-6">
-          <div className="text-zinc-500">
-            2022 - 2025
-          </div>
+                <div className="grid md:grid-cols-3 gap-4 border-b border-zinc-800 pb-6">
+                    <div className="text-zinc-500">
+                        2022 - 2025
+                    </div>
 
-          <div>
-            <h3 className="font-semibold">
-              Técnica em Química
-            </h3>
+                    <div>
+                        <h3 className="font-semibold">
+                            Chemical Technician
+                        </h3>
 
-            <p className="text-zinc-400">
-              Laboratório de Pesquisa e Desenvolvimento
-            </p>
-          </div>
+                        <p className="text-zinc-400">
+                            Research and Development Laboratory
+                        </p>
+                    </div>
 
-          <div className="text-zinc-400">
-            Atuação em pesquisa, desenvolvimento,
-            testes e documentação de projetos.
-          </div>
-        </div>
+                    <div className="text-zinc-400">
+                        Worked on research, testing,
+                        documentation and development projects.
+                    </div>
+                </div>
 
-      </div>
-    </section>
-  );
+            </div>
+        </section>
+    );
 }

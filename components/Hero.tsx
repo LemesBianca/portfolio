@@ -9,14 +9,18 @@ export default function Hero() {
         Full-Stack
       </h1>
 
-      <h1 className="text-7xl md:text-9xl font-bold leading-none text-right">
-        Developer
-      </h1>
+      <div className="flex flex-col md:flex-row md:items-end md:justify-between mt-2">
+        
+        <p className="max-w-sm text-zinc-400 text-sm md:text-base">
+          Software Development student with hands-on experience
+          building web applications using Next.js, React,
+          TypeScript, Prisma and PostgreSQL.
+        </p>
 
-      <p className="max-w-xl mt-8 text-zinc-400">
-        Desenvolvedora em formação com experiência prática
-        utilizando Next.js, React, TypeScript, Prisma e PostgreSQL.
-      </p>
+        <h1 className="text-7xl md:text-9xl font-bold leading-none">
+          Developer
+        </h1>
+      </div>
     </section>
   );
 }
