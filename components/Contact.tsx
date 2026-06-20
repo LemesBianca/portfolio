@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section className="py-1 px-8">
-      <div className="flex flex-wrap justify-center gap-20">
+      <div className="flex flex-wrap justify-center gap-20 md:gap-20">
 
         <a 
           href="https://github.com/LemesBianca"

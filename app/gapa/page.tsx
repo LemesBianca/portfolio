@@ -45,7 +45,7 @@ export default function GapaPage() {
           .../Built with ...
         </p>
 
-        <div className="flex flex-wrap gap-7 justify-center mb-20">
+        <div className="flex flex-wrap md:gap-7 justify-center mb-20">
 
           <button className="px-15 py-3 border border-zinc-500 rounded-full">
             Next.js

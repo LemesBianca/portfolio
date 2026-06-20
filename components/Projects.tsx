@@ -33,10 +33,11 @@ export default function Projects() {
 
         {/* ESQUERDA */}
         <div
-          onClick={() => changeProject(previous)}
-          className="relative h-[200px] md:col-span-1 top-1/2 -translate-y-1/2
+          className="hidden md:block
+          relative h-[200px] md:col-span-1 md:top-1/2 md:-translate-y-1/2
           rounded-3xl overflow-hidden opacity-50 hover:opacity-80
           transition-all duration-300 cursor-pointer"
+          onClick={() => changeProject(previous)}
         >
           <img
             src={projects[previous].image}
@@ -65,7 +66,7 @@ export default function Projects() {
         </div>
 
         {/* CENTRO */}
-        <div className={`relative h-[350px] md:col-span-2 rounded-3xl
+        <div className={`relative h-[550px] md:h-[350px] md:col-span-2 rounded-3xl
             overflow-hidden transition-all duration-300 cursor-pointer
             ${isAnimating ? "opacity-0 scale-95" : "opacity-100 scale-100"}
           `}>
@@ -76,6 +77,25 @@ export default function Projects() {
 
           <div className="absolute inset-0 bg-black/80" />
 
+
+          {/* MOBILE */}
+          <button
+            onClick={() => changeProject(previous)}
+            className="md:hidden absolute left-3 bottom-8 z-20
+            w-12 h-12 rounded-full border border-white/30
+            backdrop-blur-sm flex items-center justify-center"
+          >
+            ←
+          </button>
+
+          <button
+            onClick={() => changeProject(next)}
+            className="md:hidden absolute right-3 bottom-8 z-20
+            w-12 h-12 rounded-full border border-white/30
+            backdrop-blur-sm flex items-center justify-center"
+          >
+            →
+          </button>
           <div className="absolute bottom-8 left-8 right-8">
             <span className="text-blue-400 text-sm flex flex-wrap justify-center">
               {projects[current].type}
@@ -133,10 +153,11 @@ export default function Projects() {
 
         {/* DIREITA */}
         <div
+          className="hidden md:block
+          relative h-[200px] md:col-span-1 md:top-1/2 md:-translate-y-1/2
+          rounded-3xl overflow-hidden opacity-50 hover:opacity-80
+          transition-all duration-300 cursor-pointer"
           onClick={() => changeProject(next)}
-          className="relative h-[200px] md:col-span-1 top-1/2
-          -translate-y-1/2 rounded-3xl overflow-hidden opacity-50
-          hover:opacity-80 transition-all duration-300 cursor-pointer"
         >
           <img
             src={projects[next].image}
