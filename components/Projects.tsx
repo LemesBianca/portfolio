@@ -1,54 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { projects } from "@/data/projects";
 
 export default function Projects() {
-  const projects = [
-    {
-      title: "Portfolio Website",
-      type: "Personal Project",
-      description:
-        "Personal portfolio developed to showcase professional experience, projects and technical skills through a modern and responsive interface.",
-      image: "/portfolio.png",
-      technologies: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Vercel",
-      ],
-    },
-
-    {
-      title: "GAPA System",
-      type: "Professional Project",
-      description:
-        "Management system for animal protection organizations built with Next.js, TypeScript, Prisma and PostgreSQL.",
-      image: "/gapa.png",
-      technologies: [
-        "React",
-        "Next.js",
-        "TypeScript",
-        "Prisma",
-        "PostgreSQL",
-      ],
-    },
-
-    {
-      title: "Cat's Adventure",
-      type: "In Development",
-      description:
-        "A 2D top-down adventure game where players control a cat on a mission to rescue friends kidnapped by a mysterious villain.",
-      image: "/cats-adventure.png",
-      technologies: [
-        "Unity",
-        "C#",
-        "Unity API",
-        "Game Design",
-      ],
-    },
-  ];
-
   const [current, setCurrent] = useState(1);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -146,13 +102,32 @@ export default function Projects() {
               )}
             </div>
 
-            <button
-              className="mt-6 mx-auto block px-6 py-3 rounded-full
-              bg-white text-black font-medium hover:scale-105
-              transition-all duration-300 flex flex-wrap justify-center"
+            <Link
+              href={
+                current === 0
+                  ? "/portfolio"
+                  : current === 1
+                    ? "/gapa"
+                    : "/cats-adventure"
+              }
+              className="
+              mt-6
+              mx-auto
+              block
+              w-fit
+              px-6
+              py-3
+              rounded-full
+              bg-white
+              text-black
+              font-medium
+              hover:scale-105
+              transition-all
+              duration-300
+              "
             >
               View Details
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -193,140 +168,3 @@ export default function Projects() {
     </section>
   );
 }
-/*export default function Projects() {
-  return (
-    <section className="py-5 px-8">
-      <h2 className="text-4xl font-bold mb-2 justify-center flex flex-wrap justify-center">
-        Featured Projects
-      </h2>
-      <div className="grid md:grid-cols-4 gap-6">
-
-
-
-        <div className="border border-zinc-800 rounded-2xl p-6 md:col-span-1 opacity-50">
-          <span className="text-sm text-blue-400">
-            Personal Project
-          </span>
-
-          <h3 className="text-2xl font-semibold mt-2">
-            Portfolio Website
-          </h3>
-
-          <p className="text-zinc-400 mt-3">
-            Personal portfolio built to showcase
-            professional experience, projects and
-            technical skills through a modern and
-            responsive interface.
-          </p>
-
-          <div className="flex flex-wrap gap-2 mt-4">
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              Next.js
-            </span>
-
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              React
-            </span>
-
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              TypeScript
-            </span>
-
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              Tailwind CSS
-            </span>
-
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              Vercel
-            </span>
-          </div>
-        </div>
-
-
-        <div className="border border-zinc-800 rounded-2xl p-6 md:col-span-2">
-          <span className="text-sm text-blue-400 flex flex-wrap justify-center">
-            Professional Project
-          </span>
-
-          <h3 className="text-2xl font-semibold mt-2 flex flex-wrap justify-center">
-            Sistema GAPA
-          </h3>
-
-          <p className="text-zinc-400 mt-3 flex flex-wrap justify-center">
-            Web-based management system developed
-            for animal protection organizations,
-            featuring inspection and animal
-            sterilization management modules.
-          </p>
-
-          <div className="flex flex-wrap gap-2 mt-4">
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              React
-            </span>
-
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              Next.js
-            </span>
-
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              TypeScript
-            </span>
-
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              Prisma
-            </span>
-
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              PostgreSQL
-            </span>
-          </div>
-
-          <div
-            className=" mt-8 h-56 rounded-2xl bg-zinc-900 flex
-                        items-center justify-center text-zinc-600"
-          >
-            Project Preview
-          </div>
-        </div>
-
-
-        <div className="border border-zinc-800 rounded-2xl p-6 md:col-span-1 opacity-50">
-          <span className="text-sm text-blue-400">
-            In Development
-          </span>
-
-          <h3 className="text-2xl font-semibold mt-2">
-            Cat's Adventure
-          </h3>
-
-          <p className="text-zinc-400 mt-3">
-            A 2D top-down adventure game where players
-            control a brave cat on a journey to rescue
-            friends kidnapped by a mysterious villain.
-          </p>
-
-          <div className="flex flex-wrap gap-2 mt-4">
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              Unity
-            </span>
-
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              C#
-            </span>
-
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              Unity API
-            </span>
-
-            <span className="px-3 py-1 bg-zinc-900 rounded-full text-gray-300 text-sm">
-              Game Design
-            </span>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-  );
-}
-*/
