@@ -1,6 +1,6 @@
 export default function PortfolioPage() {
   return (
-    <main className="max-w-6xl mx-auto px-8 py-20">
+    <main className="min-h-screen bg-black text-white p-4 md:p-8">
 
       <p className="text-zinc-500 mb-4">
         Personal Project

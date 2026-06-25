@@ -42,22 +42,23 @@ export const projects = [
   },
 
   {
-    slug: "cats-adventure",
+    slug: "task-flow",
 
-    title: "Cat's Adventure",
+    title: "TaskFlow",
 
     type: "In Development",
 
     description:
-      "A 2D top-down adventure game where players control a cat on a mission to rescue friends kidnapped by a mysterious villain.",
+      "Full-stack task management platform inspired by Jira and Trello, built with Next.js, TypeScript, Node.js, Prisma and PostgreSQL.",
 
-    image: "/cats-adventure.png",
+    image: "/task-flow/TaskFlow.png",
 
     technologies: [
-      "Unity",
-      "C#",
-      "Unity API",
-      "Game Design",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Prisma",
+      "PostgreSQL",
     ],
   },
 ];
