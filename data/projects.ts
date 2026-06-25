@@ -42,7 +42,7 @@ export const projects = [
   },
 
   {
-    slug: "taskflow",
+    slug: "task-flow",
 
     title: "TaskFlow",
 
