@@ -42,7 +42,7 @@ export const projects = [
   },
 
   {
-    slug: "task-flow",
+    slug: "taskflow",
 
     title: "TaskFlow",
 
@@ -51,7 +51,7 @@ export const projects = [
     description:
       "Full-stack task management platform inspired by Jira and Trello, built with Next.js, TypeScript, Node.js, Prisma and PostgreSQL.",
 
-    image: "/task-flow/TaskFlow.png",
+    image: "/taskflow/TaskFlow.png",
 
     technologies: [
       "Next.js",

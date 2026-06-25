@@ -128,7 +128,7 @@ export default function Projects() {
                   ? "/portfolio"
                   : current === 1
                     ? "/gapa"
-                    : "/task-flow"
+                    : "/taskflow"
               }
               className="
               mt-6
