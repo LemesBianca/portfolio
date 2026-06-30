@@ -29,7 +29,7 @@ export default function TaskFlowPage() {
         <div className="flex justify-center mb-16">
           <div className="bg-white rounded-[40px] p-8 max-w-4xl w-full flex justify-center">
             <img
-              src="/taskflow/TaskFlowLogo.png"
+              src="/task-flow/TaskFlowLogo.png"
               alt="TaskFlow"
               className="h-40 object-contain"
             />
@@ -120,13 +120,14 @@ export default function TaskFlowPage() {
 
         <ProjectGallery
           images={[
-            "/taskflow/Dashboard.png",
-            "/taskflow/Projects.png",
-            "/taskflow/ProjectModalTask.png",
-            "/taskflow/ProjectModal.png",
-            "/taskflow/Tasks.png",
-            "/taskflow/NewTask.png",
-            "/taskflow/DeleteTask.png",
+            "/task-flow/tf01.jpg",
+            "/task-flow/tf02.jpg",
+            "/task-flow/tf03.jpg",
+            "/task-flow/tf04.jpg",
+            "/task-flow/tf05.jpg",
+            "/task-flow/tf06.jpg",
+            "/task-flow/tf07.jpg",
+            "/task-flow/tf08.jpg",
 
           ]}
         />

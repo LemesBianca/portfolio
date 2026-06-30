@@ -4,6 +4,8 @@ export const projects = [
 
     title: "Portfolio Website",
 
+    href: "/portfolio",
+
     type: "Personal Project",
 
     description:
@@ -24,6 +26,8 @@ export const projects = [
     slug: "gapa",
 
     title: "GAPA System",
+
+    href: "/gapa",
 
     type: "Professional Project",
 
@@ -46,12 +50,14 @@ export const projects = [
 
     title: "TaskFlow",
 
+    href: "/task-flow",
+
     type: "In Development",
 
     description:
       "Full-stack task management platform inspired by Jira and Trello, built with Next.js, TypeScript, Node.js, Prisma and PostgreSQL.",
 
-    image: "/taskflow/TaskFlow.png",
+    image: "/task-flow/tf00.jpg",
 
     technologies: [
       "Next.js",
@@ -59,6 +65,29 @@ export const projects = [
       "Node.js",
       "Prisma",
       "PostgreSQL",
+    ],
+  },
+
+  {
+    slug: "paw-rescue",
+
+    title: "Paw Rescue",
+
+    href: "/paw-rescue",
+
+    type: "In Development",
+
+    description:
+      "Game developed with Godot Engine, featuring 2D graphics, animations and interactive gameplay.",
+
+    image: "/paw-rescue/pr00.png",
+
+    technologies: [
+      "Godot",
+      "GDScript",
+      "Aseprite",
+      "Photoshop",
+      "Git",
     ],
   },
 ];

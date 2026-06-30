@@ -123,13 +123,7 @@ export default function Projects() {
             </div>
 
             <Link
-              href={
-                current === 0
-                  ? "/portfolio"
-                  : current === 1
-                    ? "/gapa"
-                    : "/task-flow"
-              }
+              href={projects[current].href}
               className="
               mt-6
               mx-auto
