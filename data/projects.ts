@@ -1,24 +1,48 @@
 export const projects = [
+
   {
-    slug: "portfolio",
+    slug: "paw-rescue",
 
-    title: "Portfolio Website",
+    title: "Paw Rescue",
 
-    href: "/portfolio",
+    href: "/paw-rescue",
 
-    type: "Personal Project",
+    type: "In Development",
 
     description:
-      "Personal portfolio developed to showcase professional experience, projects and technical skills through a modern and responsive interface.",
+      "Game developed with Godot Engine, featuring 2D graphics, animations and interactive gameplay.",
 
-    image: "/portfolio.png",
+    image: "/paw-rescue/pr00.png",
 
     technologies: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Vercel",
+      "Godot",
+      "GDScript",
+      "Aseprite",
+      "Photoshop",
+      "Git",
+    ],
+  },
+
+    {
+    slug: "cats-adventure",
+
+    title: "Cat's Adventure",
+
+    href: "/cats-adventure",
+
+    type: "In Development",
+
+    description:
+      "Game developed with Unity, featuring pixel graphics, animations and interactive gameplay.",
+
+    image: "/cats-adventure/ca00.png",
+
+    technologies: [
+      "Unity",
+      "C#",
+      "Aseprite",
+      "Photoshop",
+      "Git",
     ],
   },
 
@@ -68,26 +92,26 @@ export const projects = [
     ],
   },
 
-  {
-    slug: "paw-rescue",
+    {
+    slug: "portfolio",
 
-    title: "Paw Rescue",
+    title: "Portfolio Website",
 
-    href: "/paw-rescue",
+    href: "/portfolio",
 
-    type: "In Development",
+    type: "Personal Project",
 
     description:
-      "Game developed with Godot Engine, featuring 2D graphics, animations and interactive gameplay.",
+      "Personal portfolio developed to showcase professional experience, projects and technical skills through a modern and responsive interface.",
 
-    image: "/paw-rescue/pr00.png",
+    image: "/portfolio.png",
 
     technologies: [
-      "Godot",
-      "GDScript",
-      "Aseprite",
-      "Photoshop",
-      "Git",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
     ],
   },
 ];

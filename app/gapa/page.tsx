@@ -23,7 +23,7 @@ export default function GapaPage() {
   return (
     <main className="min-h-screen bg-black text-white p-4 md:p-8">
       <div className="max-w-7xl mx-auto border border-zinc-800 rounded-[40px] p-8 md:p-12">
-
+      
         <div className="flex justify-center mb-16">
           <div className="bg-white rounded-[40px] p-8 max-w-4xl w-full flex justify-center">
             <img
